@@ -1,1 +1,27 @@
 // Mixins in here
+.displayflex ( @d, @j, @a) {
+  display: flex;
+  flex-direction: @d;
+  justify-content: @j;
+  align-items: @a;
+}
+
+.button(@c,@txt) {
+  width: 84%;
+  background-color: @c;
+  color: @white;
+  font-size: 2rem;
+  text-align: @txt;
+  padding: 8px 0;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: darken(@eastern-blue, 10%);
+  }
+}
+.checkborder() {
+  border: 2px solid red;
+}
+.textcenter() {
+  text-align: center;
+}

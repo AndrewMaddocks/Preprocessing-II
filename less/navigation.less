@@ -1,1 +1,35 @@
 // Navigation Styles here
+.main-nav {
+  width: 100vw;
+  margin-top: 5%;
+  border-bottom: 2px dashed @navigation-border;
+  .displayflex(row, space-between, center);
+  @media @mobile {
+    .displayflex(column, space-between, center);
+  }
+}
+
+.fun-title {
+  margin-bottom: 28px;
+  margin-left: 30%;
+  @media @mobile {
+    .displayflex(row, space-evenly, center);
+    margin-right: 28%;
+  }
+}
+.nav {
+  width: 20%;
+  margin-bottom: 28px;
+  margin-right: 30%;
+  .displayflex(row, space-around, center);
+  @media @mobile {
+    .displayflex(row, space-evenly, center);
+    width: 80%;
+    margin-left: 28%;
+  }
+  a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: @shark;
+  }
+} //closes nav
